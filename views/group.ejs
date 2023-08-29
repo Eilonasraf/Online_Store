@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grouped Orders</title>
+</head>
+<body>
+    <h1>Grouped Orders by User</h1>
+    <ul>
+        <% groupedOrders.forEach(order => { %>
+            <li>User ID: <%= order._id %> - Number of Orders: <%= order.count %></li>
+        <% }); %>
+    </ul>
+</body>
+</html>
